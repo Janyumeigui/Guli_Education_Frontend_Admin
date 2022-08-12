@@ -54,7 +54,34 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
-
+  {
+    path: '/teacher',
+    component: Layout,
+    redirect: '/teacher/table',
+    name: '讲师管理',
+    meta: { title: '讲师管理', icon: 'example' },
+    children: [
+      {
+        path: 'table',
+        name: '讲师列表',
+        component: () => import('@/views/edu/teacher/list'),
+        meta: { title: '讲师列表', icon: 'table' }
+      },
+      {
+        path: 'save',
+        name: '添加讲师',
+        component: () => import('@/views/edu/teacher/save'),
+        meta: { title: '添加讲师', icon: 'tree' }
+      },
+      {
+        path: 'edit/:id',
+        name: 'EduTeacherEdit',
+        component: () => import('@/views/edu/teacher/save'),
+        meta: { title: '编辑讲师', noCache: true },
+        hidden: true
+      }
+    ]
+  },
   {
     path: '/example',
     component: Layout,
@@ -163,6 +190,8 @@ export const constantRoutes = [
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
+
+
 
 const createRouter = () => new Router({
   // mode: 'history', // require service support

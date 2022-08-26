@@ -19,7 +19,7 @@ Guli_Education_Frontend_Admin为后台代码:https://github.com/Janyumeigui/Guli
 
 管理课程类别，绑定课程和课程类别
 
-3.课程管理模块           ---林盛义 朱思翰
+3.课程管理模块           ---林盛义 朱思翰----周国辉
 
 管理课程基本信息，课程信息包含视频和文档内容，上传的视频包括免费和收费视频
 
@@ -35,4 +35,4 @@ Guli_Education_Frontend_Admin为后台代码:https://github.com/Janyumeigui/Guli
 
 轮播图管理，更新录播图库存信息
 
-7.权限管理              ---暂时放下
+7.权限管理              ---林盛义 朱思翰

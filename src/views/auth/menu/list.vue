@@ -8,7 +8,7 @@
 
     <el-table
       :data="menuList"
-      style="width:100% margin-bottom:20px"
+      style="width:100%; margin-bottom:20px"
       row-key="id"
       border
       ref="menuTree"
